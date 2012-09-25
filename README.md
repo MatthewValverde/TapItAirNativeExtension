@@ -85,6 +85,22 @@ i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
 		}
 	}
 	
+####Removing Banner example:
+
+	package
+	{
+		import flash.display.Sprite;
+		import com.tapit.air.TapItAir;
+	
+		public class MyTapItApp extends Sprite
+		{
+			public function MyTapItApp()
+			{		
+				TapItAir.removeBanner();
+			}
+		}
+	}
+		
 ####Example for Banner sizing, position and zone:
 
 	package
