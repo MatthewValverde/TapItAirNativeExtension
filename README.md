@@ -217,4 +217,3 @@ i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
 * FULLSCREEN_CLICKED
 * FULLSCREEN_DISMISSED
 * FULLSCREEN_CLOSED
-
