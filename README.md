@@ -1,23 +1,29 @@
 
 #TapIt AIR Native Extension Plugin
 ##Introduction
-This is an Air Native Extension (ane) for TapIt.
-Please see instructions on how to install the ane below.
+This is an Air Native Extension (ane) built for TapIt.
 
-##Basic Installation
+
+##AIR Native Extension Installation
 
 Create an AIR mobile project for Android.
 
+![Create new AIR mobile project](https://raw.github.com/MatthewValverde/TapItAirNativeExtension/master/doc/createMobileProject.PNG)
+
 Add the TapItAir.ane to your project build path.
 
-For example: Flash Builder project under project - properties - build path - Native Extensions
+![Create new AIR mobile project](https://raw.github.com/MatthewValverde/TapItAirNativeExtension/master/doc/addAne.PNG)
+
+For example: project - properties - build path - Native Extensions
+
 
 The TapItAir native extension requires these permissions and a TapIt Android Activity to run:
 
 * android.permission.INTERNET
 * android.permission.ACCESS_NETWORK_STATE
 * android.permission.READ_PHONE_STATE
-* com.tapit.adview.AdActivity
+
+![Create new AIR mobile project](https://raw.github.com/MatthewValverde/TapItAirNativeExtension/master/doc/permissions.PNG)
 
 The permisions and Activity must be located in the android manifest for the AIR application.
 
@@ -61,13 +67,15 @@ To finally appear as:
 			</manifest>
 		]]></manifestAdditions>
     </android>
-
-##ActionScript Implementation
+	
+	
+##ActionScript Usage
 
 There can only be one instance of any of the availble ad options.
 
 You can add 1 banner, 1 ad alert and 1 full screen add-- at the same time, but you are unable to add multiple instances of any ad option.  
-i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
+i.e.-- not 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
+
 
 ####Banner example:
 
@@ -85,6 +93,7 @@ i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
 		}
 	}
 	
+	
 ####Removing Banner example:
 
 	package
@@ -100,6 +109,7 @@ i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
 			}
 		}
 	}
+		
 		
 ####Example for Banner sizing, position and zone:
 
@@ -120,6 +130,7 @@ i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
 		}
 	}
 
+	
 ####Banner size options:
 * BannerSizes.AUTOSIZE_AD = auto
 * BannerSizes.IPHONE_BANNER = 320 x 50
@@ -127,6 +138,7 @@ i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
 * BannerSizes.LARGE_BANNER = 216x36
 * BannerSizes.MEDIUM_BANNER = 168x28
 * BannerSizes.SMALL_BANNER = 120x20
+	
 	
 ####Ad Alert example:
 
@@ -146,6 +158,7 @@ i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
 		}
 	}
 
+	
 ####FullScreen Ad example:
 	
 	package
@@ -164,6 +177,7 @@ i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
 			}
 		}
 	}
+	
 	
 ####Receiving call back example:
 
@@ -196,6 +210,7 @@ i.e.-- 2+ banners, 2+ ad alerts, or 2+ fullscreen ads.
 			}
 		}
 	}
+	
 	
 ####Call back available codes:
 
