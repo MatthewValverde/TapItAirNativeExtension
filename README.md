@@ -3,6 +3,13 @@
 ##Introduction
 This is an Air Native Extension (ane) built for TapIt.
 
+##Special note regarding debuging and testing via your IDE.
+While this Native Extension is for Android, you must debug or run to a connected Andorid device or emulator.
+If you attempt to debug or run via your IDE, you will recieve an error message like so:
+
+	ArgumentError: Error #3500: The extension context does not have a method with the name addBanner.
+		at flash.external::ExtensionContext/_call()
+		at flash.external::ExtensionContext/call()
 
 ##AIR Native Extension Installation
 
